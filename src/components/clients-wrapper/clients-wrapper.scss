@@ -1,0 +1,21 @@
+@use '../../scss/abstracts/' as *;
+
+.clients-wrapper {
+    @include flex(stretch);
+
+    &__main {
+        flex-grow: 1;
+        padding-right: 330px;
+    }
+
+    &__right {
+        width: 550px;
+        height: 100vh;
+        padding: $spacing;
+        border-top-left-radius: $borderRadius;
+        
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
